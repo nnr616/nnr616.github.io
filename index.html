@@ -14,3 +14,130 @@
     }
     header {
       background-color: #2ecc71; /* green */
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      margin-top: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #2ecc71;
+      font-weight: bold;
+    }
+    section {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #2ecc71;
+      border-bottom: 2px solid #2ecc71;
+      padding-bottom: 5px;
+    }
+    p {
+      line-height: 1.6;
+    }
+    .project {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      gap: 20px;
+    }
+    .project img {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .project-text {
+      flex: 1;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      color: #777;
+      font-size: 0.9em;
+    }
+    @media (max-width: 600px) {
+      .project {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .project img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Welcome to My Portfolio</h1>
+</header>
+
+<nav>
+  <a href="#about">About Me</a>
+  <a href="#projects">Projects</a>
+  <a href="#hobbies">Hobbies</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hello! I'm a passionate and driven individual who loves blending creativity with technology. With a background in [Your Field], I enjoy building impactful solutions and telling stories through data and design.</p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <img src="https://via.placeholder.com/200" alt="Project 1">
+    <div class="project-text">
+      <h3>Project One</h3>
+      <p>A web app that helps users track their fitness goals in a fun and engaging way. Built with React and Firebase, it offers personalized coaching tips and gamification features to keep users motivated.</p>
+    </div>
+  </div>
+
+  <div class="project">
+    <img src="https://via.placeholder.com/200" alt="Project 2">
+    <div class="project-text">
+      <h3>Project Two</h3>
+      <p>An AI model that predicts customer churn using explainable machine learning techniques. The model improved retention rates by 18% after deployment into a real-world marketing pipeline.</p>
+    </div>
+  </div>
+
+  <div class="project">
+    <img src="https://via.placeholder.com/200" alt="Project 3">
+    <div class="project-text">
+      <h3>Project Three</h3>
+      <p>A community-driven platform for creative coders to showcase interactive art projects. Includes voting features, tutorials, and live collaborative coding sessions.</p>
+    </div>
+  </div>
+
+</section>
+
+<section id="hobbies">
+  <h2>Hobbies</h2>
+  <p>Outside of work, you can find me:</p>
+  <ul>
+    <li>Exploring hiking trails and enjoying nature</li>
+    <li>Experimenting with digital art and animation</li>
+    <li>Playing board games and trivia nights with friends</li>
+  </ul>
+</section>
+
+<footer>
+  &copy; 2025 Your Name. All Rights Reserved.
+</footer>
+
+</body>
+</html>
